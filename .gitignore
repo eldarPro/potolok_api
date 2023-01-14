@@ -1,6 +1,8 @@
-/.bundle
+.bundle
 .idea/*
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+log/*
+tmp/*
+!log/.keep
+!tmp/.keep
+
+Gemfile.lock
