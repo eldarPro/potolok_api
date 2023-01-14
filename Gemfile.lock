@@ -94,6 +94,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.1)
     minitest (5.17.0)
     msgpack (1.6.0)
     net-imap (0.3.4)
@@ -106,7 +107,8 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.0-x86_64-linux)
+    nokogiri (1.14.0)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -145,7 +147,8 @@ GEM
     rake (13.0.6)
     reline (0.3.2)
       io-console (~> 0.5)
-    sqlite3 (1.6.0-x86_64-linux)
+    sqlite3 (1.6.0)
+      mini_portile2 (~> 2.8.0)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.5)
@@ -156,7 +159,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   bootsnap
@@ -168,7 +171,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 2.7.1p83
 
 BUNDLED WITH
-   2.3.7
+   2.1.4
