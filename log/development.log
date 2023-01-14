@@ -247,3 +247,25 @@ Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:43:00 +0300
   
 ActionController::RoutingError (No route matches [GET] "/metrics"):
   
+Started GET "/" for 127.0.0.1 at 2023-01-14 05:52:55 +0300
+Processing by StaticsController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2021)
+
+
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:55:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-14 05:55:16 +0300
+Processing by StaticsController#index as HTML
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:55:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:55:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
