@@ -4,5 +4,3 @@ log/*
 tmp/*
 !log/.keep
 !tmp/.keep
-
-Gemfile.lock

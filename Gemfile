@@ -5,7 +5,7 @@ ruby "2.7.1"
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 5.2.4"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
