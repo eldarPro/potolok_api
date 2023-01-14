@@ -269,3 +269,125 @@ Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:55:45 +0300
   
 ActionController::RoutingError (No route matches [GET] "/metrics"):
   
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:59:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-14 05:59:15 +0300
+Processing by StaticsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:59:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-14 05:59:38 +0300
+Processing by StaticsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 93)
+
+
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 05:59:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:00:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:00:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:00:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:00:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:01:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:01:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:01:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:01:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:02:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:02:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:02:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:02:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:03:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:03:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:03:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:03:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:04:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:04:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:04:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:04:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:05:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:05:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:05:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:05:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  
+Started GET "/metrics" for 127.0.0.1 at 2023-01-14 06:06:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/metrics"):
+  

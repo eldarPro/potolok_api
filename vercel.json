@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "Rakefile",
+      "use": "@vercel/ruby"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
