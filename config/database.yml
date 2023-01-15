@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: potolok_api
+  database: potolok_api_dev
   username: postgres
   password: postgres
 
