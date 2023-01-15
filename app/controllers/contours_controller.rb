@@ -1,7 +1,7 @@
 class ContoursController < ApplicationController
 
 	def index 
-		render json: { id: 333, text: '777' }
+		render json: { id: 1, title: 'super', years: 18 }
 	end
 
 end
