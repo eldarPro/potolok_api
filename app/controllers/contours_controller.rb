@@ -1,21 +1,20 @@
 class ContoursController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
+	before_action :contour, only: [:show, :update, :destroy]
+
 	def index 
 		contours = Contour.order('id DESC')
 		render json: contours
 	end
 
 	def show
-		contour = Contour.find(params[:id])
 		render json: contour
 	end
 
 	def create
 		contour = Contour.new(contour_params.merge({user_id:1}))
 		
-		#Contour.update_all(default: false) if contour.default
-
 	  if contour.save
 	    render json: contour, status: :created
 	  else
@@ -24,8 +23,6 @@ class ContoursController < ApplicationController
 	end
 
 	def update
-	  contour = Contour.find(params[:id])
-
 	  Contour.update_all(default: false) if !contour.default && contour_params[:default]
 
 	  if contour.update(contour_params)
@@ -36,15 +33,18 @@ class ContoursController < ApplicationController
 	end
 
 	def destroy
-		contour = Contour.find(params[:id])
 	  contour.destroy
 	  render json: { success: true }
 	end
 
 	private
 
+	def contour
+		Contour.find(params[:id])
+	end
+
 	def contour_params
-	  params.require(:contour).permit(:title, :price, :price_install, :price_corner, :default)
+	  params.require(:contour).permit(:title, :price, :price_install, :price_corner, :default, :color)
 	end
 
 end

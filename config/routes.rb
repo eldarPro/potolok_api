@@ -15,10 +15,27 @@ Rails.application.routes.draw do
     member do
       post :set_data
       post :edit_title
+      post :change_contour
+      post :change_cloth
+      post :divide_contour
       get  :get_data
+      get  :contours
     end
   end
 
   resources :contours
+
+  resources :cloths
+
+  resources :lusters
+
+  resources :additional_services
+ 
+  resources :price_lists do 
+    collection do
+      get :count_elements
+      get :defaults
+    end
+  end
 
 end

@@ -1,0 +1,2 @@
+class Luster < ApplicationRecord
+end

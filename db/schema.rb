@@ -10,9 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_15_044247) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_23_223512) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "additional_services", force: :cascade do |t|
+    t.string "title", null: false
+    t.integer "price", null: false
+    t.integer "price_install", null: false
+    t.text "description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_additional_services_on_user_id"
+  end
+
+  create_table "cloths", force: :cascade do |t|
+    t.string "title", null: false
+    t.integer "price", null: false
+    t.integer "price_install", null: false
+    t.integer "price_corner", null: false
+    t.boolean "default", default: false, null: false
+    t.string "color", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_cloths_on_user_id"
+  end
 
   create_table "contours", force: :cascade do |t|
     t.string "title", null: false
@@ -20,10 +44,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_15_044247) do
     t.integer "price_install", null: false
     t.integer "price_corner", null: false
     t.boolean "default", default: false, null: false
+    t.string "color", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_contours_on_user_id"
+  end
+
+  create_table "lusters", force: :cascade do |t|
+    t.string "title", null: false
+    t.integer "price", null: false
+    t.integer "price_install", null: false
+    t.string "color", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_lusters_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -37,9 +73,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_15_044247) do
   create_table "rooms", force: :cascade do |t|
     t.string "title"
     t.jsonb "data"
+    t.float "linear_mtrs", default: 0.0, null: false
+    t.float "square_mtrs", default: 0.0, null: false
     t.bigint "project_id", null: false
+    t.bigint "cloth_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["cloth_id"], name: "index_rooms_on_cloth_id"
     t.index ["project_id"], name: "index_rooms_on_project_id"
   end
 
@@ -52,7 +92,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_15_044247) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "additional_services", "users"
+  add_foreign_key "cloths", "users"
   add_foreign_key "contours", "users"
+  add_foreign_key "lusters", "users"
   add_foreign_key "projects", "users"
+  add_foreign_key "rooms", "cloths"
   add_foreign_key "rooms", "projects"
 end
