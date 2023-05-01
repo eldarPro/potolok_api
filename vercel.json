@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "config.ru",
+      "use": "@vercel/ruby",
+      "config": {
+        "ruby": "2.7.3",
+        "database": true,
+        "migration": true
+      }
+    }
+  ]
+}
