@@ -34,7 +34,7 @@ class RoomsController < ApplicationController
 		data.each do |row|
 			find_contour = row['num'] == params[:num].to_i
 			next unless find_contour.present?
-			row['profile_id'] = params[:value].to_i
+			row['contour_id'] = params[:value].to_i
 			break
 		end
 		res = room.update(data: data) if find_contour.present?		

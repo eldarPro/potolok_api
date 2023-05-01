@@ -1,5 +1,7 @@
 class Room < ApplicationRecord
 
+	belongs_to :cloth, required: false
+
 	DETAIL_TYPES = [
 		CONTOUR = 'contour'
 	]

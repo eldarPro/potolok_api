@@ -44,7 +44,8 @@ class ContoursController < ApplicationController
 	end
 
 	def contour_params
-	  params.require(:contour).permit(:title, :price, :price_install, :price_corner, :default, :color)
+	  params.require(:contour).permit(:title, :price, :price_install, :price_corner, 
+	  																:price_install_corner, :default, :color)
 	end
 
 end

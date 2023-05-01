@@ -4,8 +4,7 @@ class LustersController < ApplicationController
 	before_action :luster, only: [:show, :update, :destroy]
 
 	def index 
-		lusters = Luster.order('id DESC')
-		render json: lusters
+		render json: Luster.last
 	end
 
 	def show

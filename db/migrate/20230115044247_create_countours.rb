@@ -5,6 +5,7 @@ class CreateCountours < ActiveRecord::Migration[7.0]
       t.integer    :price, null: false
       t.integer    :price_install, null: false
       t.integer    :price_corner, null: false
+      t.integer    :price_install_corner, null: false
       t.boolean    :default, null: false, default: false
       t.string     :color, null: false
       t.references :user, null: false, foreign_key: true

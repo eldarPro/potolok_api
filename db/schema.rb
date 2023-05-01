@@ -30,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_23_223512) do
     t.integer "price", null: false
     t.integer "price_install", null: false
     t.integer "price_corner", null: false
+    t.integer "price_install_corner", null: false
     t.boolean "default", default: false, null: false
     t.string "color", null: false
     t.bigint "user_id", null: false
@@ -43,6 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_23_223512) do
     t.integer "price", null: false
     t.integer "price_install", null: false
     t.integer "price_corner", null: false
+    t.integer "price_install_corner", null: false
     t.boolean "default", default: false, null: false
     t.string "color", null: false
     t.bigint "user_id", null: false
