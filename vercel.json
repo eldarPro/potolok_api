@@ -5,7 +5,7 @@
       "src": "config.ru",
       "use": "@vercel/ruby",
       "config": {
-        "ruby": "3.0.1",
+        "ruby": "2.7.1",
         "database": true,
         "migration": true
       }
