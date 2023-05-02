@@ -16,6 +16,7 @@ class ClothsController < ApplicationController
 		cloth = Cloth.new(cloth_params.merge({user_id:1}))
 		
 	  if cloth.save
+	  	Cloth.update_all(default: false) if cloth.default
 	    render json: cloth, status: :created
 	  else
 	    render json: cloth.errors, status: :unprocessable_entity
@@ -23,9 +24,9 @@ class ClothsController < ApplicationController
 	end
 
 	def update
-	  Cloth.update_all(default: false) if !cloth.default && cloth_params[:default]
 
 	  if cloth.update(cloth_params)
+	  	Cloth.update_all(default: false) if cloth.default
 	    render json: cloth
 	  else
 	    render json: cloth.errors, status: :unprocessable_entity

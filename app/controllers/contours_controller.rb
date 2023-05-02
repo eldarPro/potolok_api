@@ -16,6 +16,7 @@ class ContoursController < ApplicationController
 		contour = Contour.new(contour_params.merge({user_id:1}))
 		
 	  if contour.save
+	    Contour.update_all(default: false) if contour.default
 	    render json: contour, status: :created
 	  else
 	    render json: contour.errors, status: :unprocessable_entity
@@ -23,9 +24,8 @@ class ContoursController < ApplicationController
 	end
 
 	def update
-	  Contour.update_all(default: false) if !contour.default && contour_params[:default]
-
 	  if contour.update(contour_params)
+	  	Contour.update_all(default: false) if contour.default
 	    render json: contour
 	  else
 	    render json: contour.errors, status: :unprocessable_entity
